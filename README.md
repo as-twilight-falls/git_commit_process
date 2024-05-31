@@ -1,0 +1,2 @@
+# git_commit_process
+软件验证成功之后提交到github仓库的流程
