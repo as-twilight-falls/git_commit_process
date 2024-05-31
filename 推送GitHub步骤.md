@@ -29,8 +29,9 @@ git remote add <远端名称> <仓库路径>
 ```
 git remote set-url origin https://<你的token>@github.com/<你的GitHub账户名>/<你想要推送的GitHub仓库名>.git
 ```
-备注：
+**备注：**
 远端名称默认是origin，为后续操作方便，建议不要起其他名称
+
 远程仓库路径查询
 ```
 git remote -v
@@ -48,8 +49,9 @@ git branch <分支名>
 ```
 git checkout <分支名>
 ```
-备注：
+**备注：**
 分支名设置为当前软件名称
+
 删除分支
 ```
 git branch -d <分支名> #不能删除当前分支，切换后再删除
@@ -65,8 +67,9 @@ git add <文件名>
 ```
 git commit -m "注释内容"
 ```
-备注：
+**备注：**
 注释内容一般是软件名称
+
 查看提交日志
 ```
 git log
@@ -81,9 +84,12 @@ git reset [--hard commitID]
 ```
 ### 2.推送至GitHub
 git push [-f][--set-upstream][远端名称[本地分支名][:远端分支名]]
-备注：
+**备注：**
+
 -f 表示强制覆盖
+
 --set-upstream 推送到远端的同时并且建立起和远端分支的关联关系
+
 经过以上正确配置，根据下图操作即可完成
  ![](./images/1717124374346_image.png)
 常见报错解决：
@@ -94,7 +100,9 @@ GitHub timeout: 删除远程仓库，再次添加
 推送成功后，自己的GitHub仓库页面一般会出现绿色按钮pull request&compare
 点击之后填写题目和内容，附上验证成功图片，create，全部流程完成。
 备注：
+
 没有绿色按钮时，可以点击下图中contribute中的绿色按钮
+
 ![](./images/1717126883412_image.png)
 已创建的pull request页面中可以编辑题目和内容
 最下方可以close，点击最下方提交记录可以查看与原代码的compare
