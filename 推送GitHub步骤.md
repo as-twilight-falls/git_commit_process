@@ -4,7 +4,9 @@
 本文档是《[Bioconda基本使用.md](https://github.com/yanghanchi/bioconda_tmp)》中，第12步的详细步骤展开。
 
 一般公司服务器已经安装好了Git版本控制工具，如果毫无Git使用经验，建议快速观看B站完整课程，单看示例命令行可以完成，但是非常难以理解。
+
 注意：大多操作有严格的先后顺序，否则容易出现报错；尤其是多人协同开发场景下，切记先pull（保持同步）再push（推送）。
+
 代码文件已修改好；软件已经验证成功。
 
 验证方法在meta.yaml文件的test中，一般是
@@ -36,6 +38,7 @@ git remote add <远端名称> <仓库路径>
 git remote set-url origin https://<你的token>@github.com/<你的GitHub账户名>/<你想要推送的GitHub仓库名>.git
 ```
 **备注：**
+
 远端名称默认是origin，为后续操作方便，建议不要起其他名称
 
 远程仓库路径查询
@@ -56,6 +59,7 @@ git branch <分支名>
 git checkout <分支名>
 ```
 **备注：**
+
 分支名设置为当前软件名称
 
 删除分支
@@ -75,6 +79,7 @@ git add <文件名>
 git commit -m "注释内容"
 ```
 **备注：**
+
 注释内容一般是软件名称
 
 查看提交日志
@@ -105,17 +110,21 @@ git push [-f][--set-upstream][远端名称[本地分支名][:远端分支名]]
 常见报错解决：
 
 GitHub经常出现报错，尝试再次push
+
 GitHub timeout: 删除远程仓库，再次添加
 
 ## 四、pull request
 推送成功后，自己的GitHub仓库页面一般会出现绿色按钮pull request&compare
+
 点击之后填写题目和内容，附上验证成功图片，create，全部流程完成。
+
 备注：
 
 没有绿色按钮时，可以点击下图中contribute中的绿色按钮
 
 ![](./images/1717126883412_image.png)
 已创建的pull request页面中可以编辑题目和内容
+
 最下方可以close，点击最下方提交记录可以查看与原代码的compare
 ![](./images/1717127052411_image.png)
 在代码仓中查看其他人的pull request
