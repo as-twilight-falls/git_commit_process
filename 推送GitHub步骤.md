@@ -83,7 +83,10 @@ git reset <文件名>
 git reset [--hard commitID]
 ```
 ### 2.推送至GitHub
+```
 git push [-f][--set-upstream][远端名称[本地分支名][:远端分支名]]
+```
+
 **备注：**
 
 -f 表示强制覆盖
