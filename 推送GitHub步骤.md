@@ -2,9 +2,11 @@
 
 ## 一、前提【时间紧迫可以忽略，直接看二】
 本文档是《[Bioconda基本使用.md](https://github.com/yanghanchi/bioconda_tmp)》中，第12步的详细步骤展开。
+
 一般公司服务器已经安装好了Git版本控制工具，如果毫无Git使用经验，建议快速观看B站完整课程，单看示例命令行可以完成，但是非常难以理解。
 注意：大多操作有严格的先后顺序，否则容易出现报错；尤其是多人协同开发场景下，切记先pull（保持同步）再push（推送）。
 代码文件已修改好；软件已经验证成功。
+
 验证方法在meta.yaml文件的test中，一般是
 ```
 R -e "library('软件name')"
@@ -13,9 +15,13 @@ R -e "library('软件name')"
 
 ## 二、准备工作
 ### 1.在自己的GitHub账号生成token
+
 原因：
+
 GitHub不再支持用户名密码的方式连接，需要使用token方式。
+
 路径：
+
 GitHub页面右上角自己的头像->settings->developer settings->personal access tokens->tokens(classic)
 ->generate new token：根据个人偏好填写设置并生成->本地保存token
 
@@ -57,6 +63,7 @@ git checkout <分支名>
 git branch -d <分支名> #不能删除当前分支，切换后再删除
 ```
 常见报错解决：
+
 切换分支后再切回
 
 ## 三、提交
@@ -96,6 +103,7 @@ git push [-f][--set-upstream][远端名称[本地分支名][:远端分支名]]
 经过以上正确配置，根据下图操作即可完成
  ![](./images/1717124374346_image.png)
 常见报错解决：
+
 GitHub经常出现报错，尝试再次push
 GitHub timeout: 删除远程仓库，再次添加
 
